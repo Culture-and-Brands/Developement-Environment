@@ -1,15 +1,16 @@
-apt-get -qqy update
+apt-get update -y
 
-apt-get -qqy install bleach
-apt-get -qqy install passlib
-apt-get -qqy install httplib2
-apt-get -qqy install requests
-apt-get -qqy install python-pip
-apt-get -qqy install oauth2client
-apt-get -qqy install itsdangerous
-apt-get -qqy python-flask python-sqlalchemy
-apt-get -qqy install postgresql python-psycopg2
-apt-get -qqy flask-httpauth
+apt-get  install python-pip
+apt-get  python-flask python-sqlalchemy
+apt-get  flask-httpauth
+apt-get  install postgresql python-psycopg2
+apt-get  install passlib
+apt-get  install httplib2
+apt-get  install requests
+apt-get  install oauth2client
+apt-get  install itsdangerous
+
+
 
 su postgres -c 'createuser -dRS culture'
 su culture -c 'createdb'
