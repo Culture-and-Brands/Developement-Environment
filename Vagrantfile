@@ -6,5 +6,5 @@ Vagrant.configure(2) do |config|
 
 	config.vm.provision "shell", path: "https://github.com/Culture-and-Brands/Developement-Environment/blob/master/provision.sh"
 
-	config.vm.synched_folder  "/Users/nuru/Desktop/", "/website"
+	config.vm.synced_folder  "/Users/nuru/Desktop/", "/website"
 end
