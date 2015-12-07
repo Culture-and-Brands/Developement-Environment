@@ -1,14 +1,14 @@
-apt-get update -y
-
-apt-get  install python-pip -y
-apt-get  python-flask python-sqlalchemy -y
-apt-get  flask-httpauth -y
-apt-get  install postgresql python-psycopg2 -y
-apt-get  install passlib -y
-apt-get  install httplib2 -y
-apt-get  install requests -y
-apt-get  install oauth2client -y
-apt-get  install itsdangerous -y
+apt-get -qqy update
+apt-get -qqy install postgresql python-psycopg2
+apt-get -qqy install python-flask python-sqlalchemy
+apt-get -qqy install python-pip
+pip install bleach
+pip install oauth2client
+pip install requests
+pip install httplib2
+pip install passlib
+pip install itsdangerous
+pip install flask-httpauth
 
 
 
