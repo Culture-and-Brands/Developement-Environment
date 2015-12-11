@@ -9,6 +9,11 @@ pip install httplib2
 pip install passlib
 pip install itsdangerous
 pip install flask-httpauth
+pip install flask-bcrypt
+pip install Werkzeug
+pip install WTForms
+pip install flask-login
+
 
 
 
