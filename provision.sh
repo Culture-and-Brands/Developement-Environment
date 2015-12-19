@@ -19,6 +19,7 @@ pip install flask-bcrypt
 pip install Werkzeug
 pip install Flask-WTF
 pip install WTForms
+pip install arrow
 pip install flask-login
 
 
