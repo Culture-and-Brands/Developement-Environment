@@ -1,28 +1,28 @@
 #!/bin/bash -eux
 
-apt-get -y update
-apt-get -y install postgresql python-psycopg2
-apt-get -y install python-flask python-sqlalchemy
-apt-get -y install libffi-dev
-apt-get -y install python-dev
-apt-get -y install python-pip
+sudo apt-get -y update
+sudo apt-get -y install postgresql python-psycopg2
+sudo apt-get -y install python-flask python-sqlalchemy
+sudo apt-get -y install libffi-dev
+sudo apt-get -y install python-dev
+sudo apt-get -y install python-pip
 
 
-pip install Flask-SQLAlchemy
-pip install sqlalchemy-utils
-pip install bleach
-pip install oauth2client
-pip install requests
-pip install httplib2
-pip install passlib
-pip install itsdangerous
-pip install flask-httpauth
-pip install flask-bcrypt
-pip install Werkzeug
-pip install Flask-WTF
-pip install WTForms
-pip install arrow
-pip install flask-login
+sudo pip install Flask-SQLAlchemy
+sudo pip install sqlalchemy-utils
+sudo pip install bleach
+sudo pip install oauth2client
+sudo pip install requests
+sudo pip install httplib2
+sudo pip install passlib
+sudo pip install itsdangerous
+sudo pip install flask-httpauth
+sudo pip install flask-bcrypt
+sudo pip install Werkzeug
+sudo pip install Flask-WTF
+sudo pip install WTForms
+sudo pip install arrow
+sudo pip install flask-login
 
 
 
