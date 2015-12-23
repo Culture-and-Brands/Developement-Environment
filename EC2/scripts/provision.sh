@@ -1,11 +1,11 @@
 #!/bin/bash -eux
 
-apt-get -qqy update
-apt-get -qqy install postgresql python-psycopg2
-apt-get -qqy install python-flask python-sqlalchemy
-apt-get -qqy install libffi-dev
-apt-get -qqy install python-dev
-apt-get -qqy install python-pip
+apt-get -y update
+apt-get -y install postgresql python-psycopg2
+apt-get -y install python-flask python-sqlalchemy
+apt-get -y install libffi-dev
+apt-get -y install python-dev
+apt-get -y install python-pip
 
 
 pip install Flask-SQLAlchemy
