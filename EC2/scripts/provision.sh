@@ -1,6 +1,7 @@
 #!/bin/bash -eux
 
 sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install postgresql python-psycopg2
 sudo apt-get -y install python-flask python-sqlalchemy
 sudo apt-get -y install libffi-dev
@@ -23,10 +24,3 @@ sudo pip install Flask-WTF
 sudo pip install WTForms
 sudo pip install arrow
 sudo pip install flask-login
-
-
-
-
-su postgres -c 'createuser -dRS culture'
-su culture -c 'createdb'
-su culture -c 'createdb cultures'
