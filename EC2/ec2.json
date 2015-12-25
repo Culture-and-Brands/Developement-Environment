@@ -73,7 +73,12 @@
     	{
     		"type": "shell",
     		"script" : "scripts/provision.sh"
-    	}
+    	},
+
+        {
+            "type": "puppet-masterless",
+            "module_paths": ["puppet/modules"]
+        }
     ],
     "post-processors":[
         {
