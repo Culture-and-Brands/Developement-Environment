@@ -31,7 +31,8 @@ class packages {
 		"Flask-WTF",
 		"WTForms",
 		"arrow",
-		"flask-login"
+		"flask-login",
+		"virtualenv"
 	]
 	# resources
 	package { '$installations':
