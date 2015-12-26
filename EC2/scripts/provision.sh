@@ -1,12 +1,11 @@
 #!/bin/bash -eux
 
 sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install postgresql python-psycopg2
 sudo apt-get -y install python-flask python-sqlalchemy
 sudo apt-get -y install libffi-dev
 sudo apt-get -y install python-dev
 sudo apt-get -y install python-pip
+sudo apt-get -y install postgresql python-psycopg2
 sudo wget http://apt.puppetlabs.com/puppetlabs-release-trusty.deb
 sudo dpkg -i puppetlabs-release-trusty.deb
 sudo apt-get -y install puppet
