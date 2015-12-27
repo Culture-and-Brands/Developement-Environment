@@ -65,7 +65,7 @@
     		"source_ami" : "ami-10b68a78",
     		"instance_type" : "t1.micro",
     		"ssh_username" : "ubuntu",
-    		"ami_name": "packer-culture {{timestamp}}"
+    		"ami_name": "packer-cultureonweb {{timestamp}}"
     	}
     ],
 
