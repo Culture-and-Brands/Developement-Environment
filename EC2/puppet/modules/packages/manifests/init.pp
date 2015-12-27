@@ -10,7 +10,6 @@ class packages {
 		"python-flask",
 		"python-sqlalchemy",
 		"python-dev",
-		"python-pip",
 		"postgresql",
 		"python-psycopg2",
 		"libffi-dev"
@@ -26,21 +25,28 @@ class packages {
 		"passlib",
 		"itsdangerous",
 		"flask-httpauth",
-		"flask-bcrypt",
 		"Werkzeug",
 		"Flask-WTF",
 		"WTForms",
 		"arrow",
 		"flask-login",
-		"virtualenv"
+		"virtualenv",
+		"flask-bcrypt"
 	]
 	# resources
-	package { '$installations':
+	package { 'python-pip':
 		ensure => installed,
 	}
 
-	package { '$pipinstalls':
+	package { $installations:
+		ensure  => installed,
+		require => Package['python-pip'],
+	}
+
+
+	package { $pipinstalls:
 		ensure   => installed,
-		provider => pip,
+		provider => 'pip',
+		require  => [Package['python-pip'], Package[$installations]],
 	}
 }

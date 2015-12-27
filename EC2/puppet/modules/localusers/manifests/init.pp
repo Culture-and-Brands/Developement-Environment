@@ -13,4 +13,11 @@ class localusers {
 	  #uid    => '501',
 	  #gid    => '20'
 	}
+
+	file { '/etc/sudoers.d/hamza':
+		ensure  => file,
+		owner   => 'hamza',
+		source  => 'puppet:///modules/localusers/hamza',
+	}
+
 }
