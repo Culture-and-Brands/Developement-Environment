@@ -20,5 +20,7 @@ class apache {
 		provider => git,
 		source   => 'git://github.com/CruzanCaramele/GotRoom',
 		revision => 'PostgreSql',
+		require  => Package['apache2'],
+		notify   => Service['apache2'],
 	}
 }
