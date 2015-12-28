@@ -14,4 +14,11 @@ class apache {
 		#hasstatus  => true,
 		require     => Package["apache2"],
 	}
+
+	vcsrepo {'/var/www/GotRoom':
+		ensure   => latest,
+		provider => git,
+		source   => 'git://github.com/CruzanCaramele/GotRoom',
+		revision => 'PostgreSql',
+	}
 }
