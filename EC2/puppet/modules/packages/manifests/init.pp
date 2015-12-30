@@ -5,6 +5,7 @@ class packages {
 	$installs = ['python-pip', 'git']
 
 	package { $installs:
+
 		ensure => installed,
 	}
 

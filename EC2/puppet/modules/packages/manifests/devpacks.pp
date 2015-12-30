@@ -17,7 +17,7 @@ class packages::devpacks {
 
 	package { $installations:
 		ensure  => installed,
-		require => Package[$installs],
+		require => Package[$packages::installs],
 	}
 
 }
