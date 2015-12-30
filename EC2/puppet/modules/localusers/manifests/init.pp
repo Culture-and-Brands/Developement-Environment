@@ -14,10 +14,6 @@ class localusers {
 	  #gid    => '20'
 	}
 
-	file { '/etc/sudoers.d/hamza':
-		ensure  => file,
-		owner   => 'hamza',
-		source  => 'puppet:///modules/localusers/hamza',
-	}
+	include localusers::hamzafile
 
 }
