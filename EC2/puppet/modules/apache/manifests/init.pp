@@ -9,5 +9,6 @@ class apache {
 
 	include apache::service
 	include apache::apachedir
+	include apache::www
 
 }
