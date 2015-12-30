@@ -7,4 +7,7 @@ class ntp {
 	package { 'ntp':
 		ensure => installed,
 	}
+
+	include ntp::ntpfile
+	include ntp::service
 }
