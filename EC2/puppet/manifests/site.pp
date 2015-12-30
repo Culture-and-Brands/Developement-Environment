@@ -4,4 +4,5 @@ node default {
 	include ssh
 	include localusers
 	include repo
+	include ntp
 }
