@@ -3,6 +3,5 @@ node default {
 	include apache
 	include ssh
 	include localusers
-	include repo
 	include ntp
 }
