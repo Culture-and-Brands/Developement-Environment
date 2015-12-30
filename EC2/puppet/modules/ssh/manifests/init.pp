@@ -7,18 +7,6 @@ class ssh {
 		ensure => installed,
 	}
 
-	file { '/etc/ssh/sshd_config':
-		ensure  => file,
-		owner   => 'root',
-		require => Package['openssh-server'],
-	}
-
-	service { 'ssh':
-		enable      => true,
-		ensure      => running,
-		subscribe   => File['/etc/ssh/sshd_config'],
-		#hasrestart => true,
-		#hasstatus  => true,
-		#require    => Class["config"],
-	}
+	include ssh::sshfile
+	include ssh::service
 }
