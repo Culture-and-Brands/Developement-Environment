@@ -24,8 +24,9 @@ class packages::pippacks {
 	]
 
 	package { $pipinstalls:
-		ensure => installed,
-		require => [Package[$installs], Package[$installations]]
+		ensure   => installed,
+		provider => pip,
+		require  => [Package[$installs], Package[$installations]],
 	}
 
 }
