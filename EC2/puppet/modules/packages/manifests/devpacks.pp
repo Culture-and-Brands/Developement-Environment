@@ -10,7 +10,6 @@ class packages::devpacks {
 		"python-flask",
 		"python-sqlalchemy",
 		"python-dev",
-		"postgresql",
 		"python-psycopg2",
 		"libffi-dev"
 	]
