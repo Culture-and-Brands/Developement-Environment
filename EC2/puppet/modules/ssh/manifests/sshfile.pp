@@ -6,6 +6,7 @@ class ssh::sshfile {
 
 	file { '/etc/ssh/sshd_config':
 		ensure  => file,
+		source  => 'puppet:///modules/ssh/sshd_config',
 		require => Package['openssh-server'],
 		
 	}
