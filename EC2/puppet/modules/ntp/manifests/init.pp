@@ -10,4 +10,5 @@ class ntp {
 
 	include ntp::ntpfile
 	include ntp::service
+	
 }
