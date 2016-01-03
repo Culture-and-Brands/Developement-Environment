@@ -103,7 +103,7 @@
     ],
 
     "push": {
-          "name": "{{user `ATLAS_USERNAME`}}/culture",
+          "name": "hamza/culture",
           "vcs": false
     }
 }
