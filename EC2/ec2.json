@@ -3,7 +3,10 @@
         	"PACKER_OS_FLAVOUR": "ubuntu",
         	"PACKER_BOX_NAME": "ubuntu-14.04.3-server-amd64",
         	"AWS_ACCESS_KEY_ID": "{{env `AWS_ACCESS_KEY_ID`}}",
-        	"AWS_SECRET_ACCESS_KEY": "{{env `AWS_SECRET_ACCESS_KEY`}}"
+        	"AWS_SECRET_ACCESS_KEY": "{{env `AWS_SECRET_ACCESS_KEY`}}",
+          "ATLAS_TOKEN": "{{env `ATLAS_TOKEN_HERE`}}",
+          "ATLAS_USERNAME": "{{env `ATLAS_USERNAME`}}"
+
     },
 
 
@@ -85,8 +88,23 @@
         {
             "type": "vagrant",
             "only": ["virtualbox-iso"]
+        },
+
+        {
+            "type": "atlas",
+            "token": "{{user `ATLAS_TOKEN`}}",
+            "artifact": "hamza/culture",
+            "artifact_type" : "amazon.ami",
+            "metadata": {
+              "created_at": "{{timestamp}}"
+            }
         }
 
-    ]
+    ],
+
+    "push": {
+          "name": "{{user `ATLAS_USERNAME`}}/culture",
+          "vcs": false
+    }
 }
 
